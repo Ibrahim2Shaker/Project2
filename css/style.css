@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    perspective: 1000px;
+    position: relative;
+}
+.header{
+    width: 80%;
+    height: 150;
+    margin: auto;
+    overflow: auto;
+    margin-top: 30;
+}
+img{
+    width: 200;
+    height: 40;
+    float: left;
+}
+.list{
+    list-style: none;
+    float: right;
+    font-size: 14.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 20;
+    margin-left: -50;
+}
+.list .a1::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    border: 2px solid white;
+    transition: 0.9s;
+}
+.list .a1:hover::after{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-bottom: none;
+    border-right: none;
+}
+.list .a1::before{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    border: 3px solid white;
+    transition: 0.2s;
+}
+.list .a1:hover::before{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+}
+.list .li1{
+    display: inline-block;
+    margin: -0px 10px;
+    color: black;
+    position: relative;
+    
+}
+.list li a{
+    color: black;
+    text-decoration: none;
+    padding: 5 5;
+}
+.oo{
+    position: relative;
+}
+.p1{
+    position: absolute;
+    margin-top: 27;
+    margin-left: 990;
+    color: rgb(82, 5, 5);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17;
+}
+.drop1{
+    float: left;
+}
+.dr{
+    margin: 0 30;
+}
+.s-drop{
+    display: inline-block;
+    margin-top: -9;
+}
+.go{
+    position: relative;
+}
+.drop-down{
+    background-color: white;
+    margin-top: 7;
+    width: 370;
+    position: absolute;
+    overflow: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid black;
+    padding: 5px 5px;
+    padding-left: 35;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    font-style: italic;
+    color: rgb(68, 17, 17);
+}
+.go:hover .drop-down {
+    visibility: visible;
+    opacity: 1;
+
+}
+.main{
+    width: 80%;
+    height: 80vh;
+    background-image: url(../images/main-banner-1-1600x700.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    margin-top: -75;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 5 0;
+}
+.category-content{
+    overflow: auto;
+}
+.category-iteams{
+    width: 21.2%;
+    float: left;
+}
+.c2{
+    margin: 0 5%;
+}
+.c4{
+    margin-left: 5%;
+}
+.category-img{
+    height: 270px;
+    width: 230px;
+    padding: -20 0 0 0;
+}
+.category-p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.category-tittle{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tittle11{
+    text-align: center;
+    padding-top: 30;
+}
+.sp11{
+    margin-left: 635;
+    width: 80;
+    height: 3;
+    color: rgba(88, 31, 31, 0.616);
+    background-color: rgba(88, 31, 31, 0.616);
+    display: inline-block;
+    margin-bottom: 40;
+    margin-top: 10;
+    transition: 0.3s;
+}
+.sp11:hover{
+    transform: scale(1.2,1);
+}
+.arrow{
+    color: rgba(70, 23, 23, 0.699);
+    visibility: hidden;
+    opacity: 0;
+}
+.category-iteams:hover .arrow{
+    visibility: visible;
+    opacity: 1;
+}
+.container2{
+    width: 80%;
+    margin: auto;
+}
+.marketing-content{
+    overflow: auto;
+}
+.marketing-iteams{
+    margin: 70 1.5%;
+    background-color: rgb(243, 239, 250);
+    float: left ; 
+}
+.marketing-sp{
+    color: rgba(88, 42, 42, 0.445);
+    margin-left: 320;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.marketing-p1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 10;
+}
+.marketing-tittle1{
+    padding-left: 10;
+    padding-top: 10;
+}
+.mit{
+    background-image: url(../images/cms-banner-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 260;
+    padding: 20 30;
+    transition: 0.5s;
+}
+.mi{
+    background-image: url(../images/cms-banner-2.jpg);
+}
+.mit:hover{
+    transform: scale(1.2);
+}
+.container3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.delivery-content{
+    overflow: auto;
+}
+.delivery-iteams{
+    width: 20%;
+    float: left;
+}
+.iteam{
+    background-image: url(../images/service-icon.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    text-align: center;
+    transition: 0.5s;
+}
+.iteam1 {
+    background-position: center 5px;
+    }
+    .iteam1:hover {
+        background-position: center -89px;
+    }
+    .iteam2 {
+        background-position: center -180px;
+    }
+    
+    .iteam2:hover {
+        background-position: center -273px;
+    }
+    
+    .iteam3 {
+        background-position: center -364px;
+    }
+    
+    .iteam3:hover {
+        background-position: center -457px;
+    }
+    .iteam4 {
+        background-position: center -547px;
+    }
+    
+    .iteam4:hover {
+        background-position: center -640px;
+    }
+    .iteam5 {
+        background-position: center -730px;
+    }
+    
+    .iteam5:hover {
+        background-position: center -825px;
+    }
+    .is2{
+        border-left: 1px solid rgba(117, 1, 1, 0.61);
+    }
+    .is3{
+        border-left: 1px solid rgba(117, 1, 1, 0.61);
+    }
+    .is4{
+        border-left: 1px solid rgba(117, 1, 1, 0.61);
+    }
+    .is5{
+        border-left: 1px solid rgba(117, 1, 1, 0.61);
+    }
+    .delivery-span{
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(117, 1, 1, 0.61);
+        margin-top: 25;
+
+    }
+    .delivery-tittle2{
+        font-family: monospace; 
+        font-size: 14;
+    }
+    .delivery-tittle1{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .container4{
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+        margin-top: -50;
+    }
+    .prodacts-content{
+        overflow: auto;
+    }
+    .prodacts-iteam{
+        width: 30%;
+        float: left;
+        margin: auto;
+        position: relative;
+        transition: 1s;
+        transform-style: preserve-3d;
+        margin-top: 100;
+        display: inline-block;
+    }
+    .prodacts-iteam , .front , .back{
+        width: 250px;
+        height: 300px;
+    }
+    .back{
+        background-image: url(../images/chair1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transform: rotatey(180deg);
+    }
+    .prodacts-iteam:hover{
+        transform: rotatey(180deg);
+    }
+    .front , .back{
+        position: absolute;
+    }
+    .front{
+        z-index: 1;
+        background-image: url(../images/chair2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        backface-visibility: hidden;
+    }
+    .pi2{
+        margin: 0 15%;
+        margin-top: 100;
+    }
+    .pi5{
+        margin: 0 15%;
+        margin-top: 100;
+        position: relative;
+    }
+    .prodacts-i{
+        text-align: center;
+        margin-top: 500;
+        display: inline-block;
+        margin-left: -250;
+        position: absolute;
+    }
+    .i2{
+        width: 0 15%;
+        margin-left: -415;
+        margin-top: 400;
+    }
+    .i1{
+        margin-top: 400;
+    }
+    .i2{
+        margin-top: 400;
+    }
+    .i3{
+        margin-top: 400;
+    }
+    .i4{
+        margin-top: 800;
+    }
+    .i5{
+        margin-top: 800;
+        margin-left: -660;
+    }
+    .i6{
+        margin-top: 800;
+        margin-left: -1072;
+    }
+    .fr2{
+        background-image: url(../images/chair3.jpg);
+    }
+    .bc2{
+        background-image: url(../images/chair4.jpg);
+    }
+    .fr3{
+        background-image: url(../images/chair5.jpg);
+    }
+    .bc3{
+        background-image: url(../images/chair6.jpg);
+    }
+    .ss{
+        color: rgb(94, 23, 23);
+    }
+    .prodacts-tittle2{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .icon{
+        font-size: 35;
+        text-align: center;
+        margin-top: 130;
+        color: rgb(82, 29, 29);
+    }
+    .tittle15{
+        text-align: center;
+        margin-top: 25;
+    }
+    .sp15{
+        width: 100;
+        height: 3;
+        color: rgba(88, 31, 31, 0.616);
+        background-color: rgba(88, 31, 31, 0.616);
+        display: inline-block;
+        margin-bottom: 40;
+        margin-top: 10;
+        transition: 0.3s;
+    }
+    .sp15:hover{
+        transform: scale(1.2,1);
+    }
+
+
+
+
+
